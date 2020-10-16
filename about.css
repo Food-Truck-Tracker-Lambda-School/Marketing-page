@@ -49,3 +49,43 @@ table {
 }
 /* css reset */
 
+*{
+	box-sizing: border-box;
+	font-size: 10px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img{
+	width:100%;
+	height: auto;
+}
+/* Header*/
+header {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 5rem;
+	margin: 5% 0;
+	padding: 0 2%;
+	background-color: #F97D0A;
+	color:#FFECC2; 
+}
+
+.logo{
+	font-size: 2rem;
+	font-weight: 600;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 {
+	font-size: 3rem;
+	color: #A10C00;
+	text-align: center;
+	width:50%;
+	margin:auto;
+	padding-bottom:2%;
+	border-bottom: #F9AE0A dashed 0.2rem;
+}
+.bio {
+	width: 50%;
+	display:flex;
+	flex-direction: column;
+}
