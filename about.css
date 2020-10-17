@@ -58,6 +58,7 @@ img{
 	width:100%;
 	height: auto;
 }
+
 /* Header*/
 header {
 	display:flex;
@@ -67,14 +68,26 @@ header {
 	margin: 5% 0;
 	padding: 0 2%;
 	background-color: #F97D0A;
-	color:#FFECC2; 
+	color:#FFECC2;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .logo{
 	font-size: 2rem;
 	font-weight: 600;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
 }
+
+nav{
+	display:flex;
+	flex-flow: column nowrap;
+}
+nav a{
+	text-decoration: none;
+	color: #FFECC2;
+}
+	/* About Us Bio */
+
 h1 {
 	font-size: 3rem;
 	color: #A10C00;
@@ -92,7 +105,7 @@ h1 {
 	flex-direction: column;
 	align-items: center;
 	background-color:#FFECC2;
-	padding:2%;
+	padding:5%;
 }
 .bio p {
 	font-size: 1.5rem;
@@ -101,6 +114,8 @@ h1 {
 	line-height: 1.5rem;
 	
 }
+
+	/* Our Services */
 
 h2 {
 	font-size: 2rem;
@@ -112,11 +127,12 @@ h2 {
 	margin-bottom: 2%;
 	border-bottom: #F9AE0A dashed 0.2rem;
 }
-
+	/* Styles for each section */
 h3 {
 	color:#F97D0A;
 	font-size: 1.8rem;
 	text-align: center;
+	margin: 1rem 0;
 }
 
 .service {
@@ -125,9 +141,10 @@ h3 {
 	color: #A10C00;
 	text-align: center;
 	width:90%;
-	margin:5% auto; 
+	margin:5% auto;
+	padding:5%; 
 }
-
+	/* Footer */
 footer {
 	display:flex;
 	align-items: center;
@@ -138,4 +155,38 @@ footer {
 	background-color: #F97D0A;
 	color:#FFECC2; 
 	font-size:1rem;
+}
+
+@media only screen and (min-width: 800px) {
+	header {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	nav {
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		width: 100%;
+	}
+	.bio {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 2%;
+	}
+	.bio p {
+		margin: 0 2%;
+		padding: 2rem 0;
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.service-style {
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
+	}
+	.service{
+		height: 30rem;
+		background-color: #fff;
+		}
 }
