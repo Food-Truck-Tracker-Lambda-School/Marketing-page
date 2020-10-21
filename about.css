@@ -77,15 +77,34 @@ header {
 	font-weight: 600;
 	
 }
+/* Nav Bar */
+.burger-menu .line {
+	background-color: #FFECC2;
+	width:3rem;
+	height:0.3rem;
+	margin: 0.2rem;
+}
+
+.burger-menu {
+	cursor: pointer;
+}
 
 nav{
-	display:flex;
+	display:none;
 	flex-flow: column nowrap;
+	background-color:#F97D0A;
+	
 }
 nav a{
 	text-decoration: none;
 	color: #FFECC2;
 }
+
+a:hover {
+	color:#A10C00;
+}
+
+
 	/* About Us Bio */
 
 h1 {
@@ -163,9 +182,14 @@ footer {
 		justify-content: space-around;
 	}
 	nav {
+		display:flex;
 		flex-flow: row nowrap;
 		justify-content: space-around;
 		width: 100%;
+	}
+
+	.burger-menu{
+		display: none;
 	}
 	.bio {
 		flex-direction: row;
