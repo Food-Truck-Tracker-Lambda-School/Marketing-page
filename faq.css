@@ -55,7 +55,7 @@ table {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 img{
-	width:100%;
+	max-width:100%;
 	height: auto;
 }
 
@@ -64,22 +64,22 @@ header {
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 5rem;
 	margin: 5% 0;
 	padding: 0 2%;
-	background-color: #F97D0A;
+	border-bottom: #F97D0A 1rem solid;
 	color:#FFECC2;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .logo{
-	font-size: 2rem;
-	font-weight: 600;
+	z-index: 1;
+	width:10rem;
+	height: auto;
 	
 }
 /* Nav Bar */
 .burger-menu .line {
-	background-color: #FFECC2;
+	background-color: #F97D0A;
 	width:3rem;
 	height:0.3rem;
 	margin: 0.2rem;
@@ -87,6 +87,7 @@ header {
 
 .burger-menu {
 	cursor: pointer;
+	
 }
 
 nav{
@@ -105,7 +106,7 @@ a:hover {
 }
 
 
-	/* About Us Bio */
+	/* Main FAQ Styling */
 
 h1 {
 	font-size: 3rem;
@@ -117,16 +118,13 @@ h1 {
 	margin-bottom: 2%;
 	border-bottom: #F9AE0A dashed 0.2rem;
 }
-.bio {
+.banner {
 	width: 90%;
 	margin:5% auto;
-	display:flex;
-	flex-direction: column;
-	align-items: center;
-	background-color:#FFECC2;
 	padding:5%;
+	text-align:center;
 }
-.bio p {
+.banner p {
 	font-size: 1.5rem;
 	color: #A10C00;
 	padding: 2% 0;
@@ -158,10 +156,19 @@ h3 {
 	background-color: #FFECC2;
 	font-size: 1.5rem;
 	color: #A10C00;
-	text-align: center;
+	line-height: 2rem;
 	width:90%;
 	margin:5% auto;
 	padding:5%; 
+}
+.service p {
+	margin: auto;
+}
+
+/* Phone Number */
+span {
+	color:#F97D0A;
+	text-decoration: underline;
 }
 	/* Footer */
 footer {
@@ -176,41 +183,40 @@ footer {
 	font-size:1rem;
 }
 
+/* Tablet Size */
+
 @media only screen and (min-width: 800px) {
 	header {
 		flex-direction: column;
-		justify-content: space-around;
+		border: none;
 	}
 	nav {
 		display:flex;
 		flex-flow: row nowrap;
 		justify-content: space-around;
+		align-items: center;
 		width: 100%;
+		line-height: 3rem;
+		font-size: 1.3rem;
 	}
 
 	.burger-menu{
 		display: none;
 	}
-	.bio {
-		flex-direction: row;
-		justify-content: space-between;
-		padding: 2%;
-	}
-	.bio p {
-		margin: 0 2%;
-		padding: 2rem 0;
-		font-size: 1.2rem;
-	}
+	
 }
 
+/* Desktop Size */
+
 @media only screen and (min-width: 1024px) {
+
 	.service-style {
 		display: flex;
-		justify-content: space-around;
-		align-items: baseline;
+		justify-content: space-between;
+		flex-flow: row wrap;
+
 	}
 	.service{
-		height: 30rem;
-		background-color: #fff;
+		width:45%;
 		}
 }
