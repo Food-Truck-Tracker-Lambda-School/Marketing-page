@@ -56,8 +56,20 @@ table {
 .top-border {
 	width: 100%;
 	margin: auto;
-	background-color: goldenrod;
+	background-color: green;
 	height: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+	.top-border {
+		background-color: purple;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.top-border {
+		background-color: red;
+	}
 }
 
 .wrap {
@@ -67,26 +79,168 @@ table {
 
   }
 
+
 .container header nav a {
     display: inline-block;
-    color: goldenrod;
+    color: lightseagreen;
     text-decoration: none;
     font-size: 20px;
 	margin: auto;
 	padding: 10px;
   }
 
-h2 {
+  @media only screen and (max-width: 800px) {
+	  .container header nav a {
+		  color: purple;
+		  font-size: 15px;
+	  }
+  }
+
+  @media only screen and (max-width: 500px) {
+	.container header nav a {
+		color: red;
+		font-size: 15px;
+	}
+}
+
+h1 {
+	margin: auto;
+	width: 50%;
 	padding: 20px;
 	border: 20px;
+	font-size: 32px;
+	color: lightseagreen;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
 
+}
+
+@media only screen and (max-width: 800px) {
+	h1 {
+		color: purple;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	h1 {
+		color: red;
+		font-size: 25px;
+	}
 }
 
 .featured-img img {
 	  display: flex;
 	  flex-flow: row nowrap;
 	  margin: auto;
-	  width: 50%;
-	  
-
+	  max-width: 100%;
   }
+
+.featured-img div {
+	margin: auto;
+	width: 85%;
+	padding: 20px;
+	font-size: 25px;
+	line-height: 70px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+@media only screen and (max-width: 800px) {
+	.featured-img div {
+		font-size: 20px;
+	}
+}
+
+.section2 {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+@media only screen and (max-width: 800px) {
+	.section2 {
+		display: flex;
+		flex-flow: column;
+	}
+}
+
+.section2 img {
+	display: flex;
+	flex-flow: row nowrap;
+	margin: auto;
+	max-width: 25%;
+	border: 20px;
+	padding: 20px;
+	 
+}
+
+@media only screen and (max-width: 800px) {
+	.section2 img {
+		max-width: 50%;
+
+	}
+}
+
+.bottom-para {
+	margin: auto;
+	width: 85%;
+	padding: 20px;
+	font-size: 25px;
+	line-height: 70px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+	.bottom-para {
+		font-size: 20px;
+	}
+}
+
+.start a {
+	display: inline-block;
+	color: red;
+    text-decoration: none;
+    font-size: 40px;
+	margin: auto;
+	padding: 5px;
+
+}
+
+@media only screen and (max-width: 800px) {
+	.start a {
+		font-size: 20px;
+
+	}
+}
+
+.footer {
+	width: 100%;
+	margin: auto;
+	background-color: green;
+	height: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+	.footer {
+		background-color: purple;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.footer {
+		background-color: red;
+	}
+}
+
+.footer div {
+	text-align: center;
+	margin: auto;
+	padding: 20px 0;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+	.footer div {
+		font-size: 15px;
+	}
+}
+
