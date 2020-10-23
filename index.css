@@ -53,6 +53,13 @@ table {
 	margin: auto;
 }
 
+@media only screen and (max-width: 1024px) {
+	.container {
+		width: 100%;
+
+	}
+}
+
 .top-border {
 	width: 100%;
 	margin: auto;
@@ -89,14 +96,21 @@ table {
 	padding: 10px;
   }
 
-  @media only screen and (max-width: 800px) {
+.container header nav a:hover {
+	color: blueviolet;
+	font-style: italic;
+
+  }
+  
+
+@media only screen and (max-width: 800px) {
 	  .container header nav a {
 		  color: purple;
 		  font-size: 15px;
 	  }
   }
 
-  @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 	.container header nav a {
 		color: red;
 		font-size: 15px;
@@ -118,6 +132,7 @@ h1 {
 @media only screen and (max-width: 800px) {
 	h1 {
 		color: purple;
+		font-size: 28px;
 	}
 }
 
@@ -128,12 +143,43 @@ h1 {
 	}
 }
 
+h1 {
+	animation-duration: 3s;
+	animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+	from {
+	  margin-left: 100%;
+	  width: 300%; 
+	}
+  
+	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+  }
+
 .featured-img img {
 	  display: flex;
 	  flex-flow: row nowrap;
 	  margin: auto;
 	  max-width: 100%;
   }
+
+.featured-img img {
+     animation-duration: 3s;
+     animation-name: spin;
+}
+
+  @keyframes spin {
+	from{
+	transform: rotateY(0deg);
+	}
+	to{
+	transform: rotateY(360deg);
+	}
+   }
 
 .featured-img div {
 	margin: auto;
@@ -144,6 +190,23 @@ h1 {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 
 }
+
+p {
+	animation-duration: 3s;
+	animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+	from {
+	  margin-left: 100%;
+	  width: 300%; 
+	}
+  
+	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+  }
 
 @media only screen and (max-width: 800px) {
 	.featured-img div {
@@ -204,6 +267,13 @@ h1 {
 	padding: 5px;
 
 }
+
+.start a:hover {
+	color: blueviolet;
+	font-style: italic;
+
+  }
+  
 
 @media only screen and (max-width: 800px) {
 	.start a {
