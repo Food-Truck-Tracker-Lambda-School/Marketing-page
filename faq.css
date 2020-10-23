@@ -190,6 +190,11 @@ h3 {
 	margin: auto;
 }
 
+figcaption {
+	font-size:0.8rem;
+	text-align: center;
+}
+
 /* Phone Number */
 span {
 	color:#F97D0A;

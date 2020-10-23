@@ -188,6 +188,11 @@ h3 {
 	margin:5% auto;
 	padding:5%; 
 }
+
+figcaption {
+	font-size:0.8rem;
+	text-align: center;
+}
 	/* Footer */
 footer {
 	display:flex;
