@@ -49,14 +49,39 @@ table {
 
 .container {
     width: 100%;
-    height: 100%;
+	height: 100%;
+	background-color: lightgreen;
 
+}
+
+@media only screen and (max-width: 800px) {
+	.container {
+		background-color: plum;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.container {
+		background-color: powderblue;
+	}
 }
 
 .top-border {
 	width: 100%;
 	background-color:green;
 	height: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+	.top-border {
+		background-color: purple;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.top-border {
+		background-color: red;
+	}
 }
 
 .wrap {
@@ -69,7 +94,7 @@ table {
 
 .container header nav a {
     display: inline-block;
-    color: goldenrod;
+    color: green;
     text-decoration: none;
     font-size: 20px;
     text-align: center;
@@ -78,35 +103,145 @@ table {
 
   }
 
+  .container header nav a:hover {
+	color: white;
+	font-style: italic;
+
+  }
+  
+
+  @media only screen and (max-width: 800px) {
+	.container header nav a {
+		color: purple;
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+  .container header nav a {
+	  color: red;
+	  font-size: 15px;
+  }
+}
+
+h1 {
+margin: auto;
+width: 50%;
+padding: 20px;
+border: 20px;
+font-size: 32px;
+color: lightseagreen;
+font-family: "Comic Sans MS", cursive, sans-serif;
+text-align: center;
+	
+}
+
+@media only screen and (max-width: 800px) {
+	h1 {
+		color: purple;
+		font-size: 28px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	h1 {
+		color: red;
+		font-size: 25px;
+	}
+}
+
+h1 {
+	animation-duration: 3s;
+	animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+	from {
+	  margin-left: 100%;
+	  width: 300%; 
+	}
+  
+	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+  }
+
 .photo {
     display: flex;
-    flex-flow: column wrap;
+	flex-flow: column wrap;
+	text-align: center;
+
 }
 
 .photo2 {
     display: flex;
-    flex-flow: row wrap;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
 }
+
+.photo2 img {
+	animation-duration: 3s;
+	animation-name: spin;
+}
+
+ @keyframes spin {
+   from{
+   transform: rotateY(0deg);
+   }
+   to{
+   transform: rotateY(360deg);
+   }
+  }
 
 .photo img {
 	display: flex;
     flex-flow: row wrap;
     max-width: 150px;
     max-height: 150px;
-	border: 20px;
-    padding: 20px;
+	border: 30px;
+    padding: 40px;
     margin: 0;
-
-    
-
 }
 
+p {
+	animation-duration: 3s;
+	animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+	from {
+	  margin-left: 100%;
+	  width: 300%; 
+	}
+  
+	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+  }
+
 .footer {
+	height: 50px;
 	width: 100%;
 	margin: auto;
 	background-color: green;
-	height: 50px;
+
 }
+
+@media only screen and (max-width: 800px) {
+	.footer {
+		background-color: purple;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.footer {
+		background-color: red;
+	}
+}
+
 
 .footer div {
 	text-align: center;
@@ -114,3 +249,10 @@ table {
 	padding: 20px 0;
 	font-size: 20px;
 }
+
+@media only screen and (max-width: 800px) {
+	.footer div {
+		font-size: 15px;
+	}
+}
+
