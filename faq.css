@@ -105,6 +105,32 @@ a:hover {
 	color:#A10C00;
 }
 
+/* Toggle Mobile Nav */
+
+.nav-active{
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	line-height: 3rem;
+	font-size: 1.3rem;
+	position: absolute;
+	top: 12rem;
+	left:0;
+	
+
+}
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+opacity:0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-5px, -6px);
+}
 
 	/* Main FAQ Styling */
 
