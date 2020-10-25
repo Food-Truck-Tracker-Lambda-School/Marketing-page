@@ -96,7 +96,7 @@ table {
     display: inline-block;
     color: green;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 20px;
 	padding: 20px;
@@ -113,14 +113,14 @@ table {
   @media only screen and (max-width: 800px) {
 	.container header nav a {
 		color: purple;
-		font-size: 15px;
+		font-size: .75rem;
 	}
 }
 
 @media only screen and (max-width: 500px) {
   .container header nav a {
 	  color: red;
-	  font-size: 15px;
+	  font-size: .75rem;
   }
 }
 
@@ -129,7 +129,7 @@ margin: auto;
 width: 50%;
 padding: 20px;
 border: 20px;
-font-size: 32px;
+font-size: 1.3rem;
 color: lightseagreen;
 font-family: "Comic Sans MS", cursive, sans-serif;
 text-align: center;
@@ -139,14 +139,14 @@ text-align: center;
 @media only screen and (max-width: 800px) {
 	h1 {
 		color: purple;
-		font-size: 28px;
+		font-size: 1.3rem;
 	}
 }
 
 @media only screen and (max-width: 500px) {
 	h1 {
 		color: red;
-		font-size: 25px;
+		font-size: 1.25rem;
 	}
 }
 
@@ -247,12 +247,12 @@ p {
 	text-align: center;
 	margin: auto;
 	padding: 20px 0;
-	font-size: 20px;
+	font-size: 1rem;
 }
 
 @media only screen and (max-width: 800px) {
 	.footer div {
-		font-size: 15px;
+		font-size: .75rem;
 	}
 }
 
